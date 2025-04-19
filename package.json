@@ -1,0 +1,19 @@
+{
+  "name": "hono-template-node",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.js",
+    "tailwindcss": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.1",
+    "@tailwindcss/cli": "^4.1.4",
+    "@tailwindcss/vite": "^4.1.4",
+    "hono": "^4.7.7",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
+}
