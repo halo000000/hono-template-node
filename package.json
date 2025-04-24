@@ -3,17 +3,26 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.js",
-    "tailwindcss": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch"
+    "tailwindcss": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch",
+    "studio": "npx drizzle-kit studio --port=3004",
+    "db:push": "npx drizzle-kit push",
+    "db:seed": "node ./database/seeds/userSeed.js "
   },
   "dependencies": {
     "@hono/node-server": "^1.14.1",
     "@tailwindcss/cli": "^4.1.4",
     "@tailwindcss/vite": "^4.1.4",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.42.0",
     "hono": "^4.7.7",
-    "tailwindcss": "^4.1.4"
+    "pg": "^8.15.5",
+    "tailwindcss": "^4.1.4",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "@types/pg": "^8.11.14",
+    "drizzle-kit": "^0.31.0",
+    "tsx": "^4.19.3"
   }
 }
